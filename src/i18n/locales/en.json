@@ -1,0 +1,46 @@
+{
+  "title": "North American Meat Price Dashboard",
+  "subtitle": "Retail Prices in Ontario & Regional Comparisons",
+  "charts": {
+    "ontario-prices": "Ontario Meat Prices",
+    "regional-comparison": "Regional Price Comparison",
+    "select-regions": "Select Regions to Compare",
+    "price-axis": "Price ({{currency}})",
+    "regions": "Regions"
+  },
+  "meat-types": {
+    "lamb": "Lamb",
+    "chicken": "Chicken", 
+    "goat": "Goat",
+    "beef": "Beef"
+  },
+  "regions": {
+    "ontario": "Ontario",
+    "quebec": "Quebec",
+    "british-columbia": "British Columbia",
+    "alberta": "Alberta",
+    "california": "California",
+    "texas": "Texas",
+    "new-york": "New York",
+    "florida": "Florida"
+  },
+  "currency": {
+    "cad": "CAD",
+    "usd": "USD",
+    "toggle": "Currency"
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français",
+    "toggle": "Language"
+  },
+  "accessibility": {
+    "chart-description": "Interactive chart showing meat prices",
+    "language-toggle": "Switch language",
+    "currency-toggle": "Switch currency",
+    "region-select": "Select regions for comparison",
+    "price-tooltip": "{{meat}} price: {{price}}"
+  },
+  "loading": "Loading data...",
+  "error": "Error loading data"
+}

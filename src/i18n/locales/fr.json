@@ -1,0 +1,46 @@
+{
+  "title": "Tableau de Bord des Prix de Viande en Amérique du Nord",
+  "subtitle": "Prix de Détail en Ontario et Comparaisons Régionales",
+  "charts": {
+    "ontario-prices": "Prix de Viande en Ontario",
+    "regional-comparison": "Comparaison des Prix Régionaux",
+    "select-regions": "Sélectionnez les Régions à Comparer",
+    "price-axis": "Prix ({{currency}})",
+    "regions": "Régions"
+  },
+  "meat-types": {
+    "lamb": "Agneau",
+    "chicken": "Poulet",
+    "goat": "Chèvre", 
+    "beef": "Bœuf"
+  },
+  "regions": {
+    "ontario": "Ontario",
+    "quebec": "Québec",
+    "british-columbia": "Colombie-Britannique",
+    "alberta": "Alberta",
+    "california": "Californie",
+    "texas": "Texas",
+    "new-york": "New York",
+    "florida": "Floride"
+  },
+  "currency": {
+    "cad": "CAD",
+    "usd": "USD",
+    "toggle": "Devise"
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français",
+    "toggle": "Langue"
+  },
+  "accessibility": {
+    "chart-description": "Graphique interactif montrant les prix de viande",
+    "language-toggle": "Changer de langue",
+    "currency-toggle": "Changer de devise",
+    "region-select": "Sélectionner les régions pour comparaison",
+    "price-tooltip": "Prix de {{meat}} : {{price}}"
+  },
+  "loading": "Chargement des données...",
+  "error": "Erreur lors du chargement des données"
+}

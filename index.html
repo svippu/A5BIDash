@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bilingual meat price dashboard showing Ontario retail prices and North American regional comparisons">
+    <meta name="keywords" content="meat prices, Canada, Ontario, dashboard, bilingual, EN, FR">
+    <title>Meat Price Dashboard | Tableau de Bord des Prix de Viande</title>
+    
+    <!-- Accessibility enhancements -->
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#3b82f6">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- SEO meta tags -->
+    <meta property="og:title" content="North American Meat Price Dashboard">
+    <meta property="og:description" content="Interactive bilingual dashboard showing meat prices across Ontario and North America">
+    <meta property="og:type" content="website">
+    
+    <style>
+      /* Critical CSS for loading state */
+      .loading-skeleton {
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: loading 1.5s infinite;
+      }
+      
+      @keyframes loading {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Loading skeleton for better UX -->
+      <div class="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div class="loading-skeleton w-16 h-16 rounded-full"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
