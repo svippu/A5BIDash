@@ -1,6 +1,6 @@
 {
   "title": "North American Meat Price Dashboard",
-  "subtitle": "Retail Prices in Ontario & Regional Comparisons",
+  "subtitle": "Retail Prices in Ontario & Regional Comparisons (per pound)",
   "charts": {
     "ontario-prices": "Ontario Meat Prices",
     "regional-comparison": "Regional Price Comparison",

@@ -1,6 +1,6 @@
 {
   "title": "Tableau de Bord des Prix de Viande en Amérique du Nord",
-  "subtitle": "Prix de Détail en Ontario et Comparaisons Régionales",
+  "subtitle": "Prix de Détail en Ontario et Comparaisons Régionales (par livre)",
   "charts": {
     "ontario-prices": "Prix de Viande en Ontario",
     "regional-comparison": "Comparaison des Prix Régionaux",
