@@ -53,26 +53,21 @@ const OntarioBarChart = ({ currency, convertPrice }) => {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
-      legend: {
-        display: false,
-      },
+      legend: { display: false },
       title: {
         display: true,
         text: t('charts.ontario-prices'),
-        font: {
-          size: 16,
-          weight: 'bold',
-        },
+        font: { size: 16, weight: 'bold' },
         color: '#374151',
       },
       tooltip: {
         callbacks: {
-          label: (context) => {
+          label: context => {
             const meat = meatTypes[context.dataIndex];
             const price = formatPrice(context.parsed.y, currency, i18n.language);
-            return t('accessibility.price-tooltip', { 
-              meat: t(`meat-types.${meat}`), 
-              price 
+            return t('accessibility.price-tooltip', {
+              meat: t(`meat-types.${meat}`),
+              price,
             });
           },
         },
@@ -84,32 +79,28 @@ const OntarioBarChart = ({ currency, convertPrice }) => {
         title: {
           display: true,
           text: t('charts.price-axis', { currency }),
-          font: {
-            weight: 'bold',
-          },
+          font: { weight: 'bold' },
         },
         ticks: {
-          callback: (value) => formatPrice(value, currency, i18n.language),
+          callback: value => formatPrice(value, currency, i18n.language),
         },
       },
       x: {
         title: {
           display: true,
-          text: t('meat-types.lamb').split('')[0] + '...', // Truncated for responsive
+          text: '', // optional—remove if you don't need an X-axis title
         },
       },
     },
-    animation: {
-      duration: 800,
-      easing: 'easeInOutQuart',
-    },
+    animation: { duration: 800, easing: 'easeInOutQuart' },
   };
 
   return (
     <div className="glass-card p-8 rounded-2xl fade-in">
-      <div className="h-80 md:h-96">
-        <Bar 
-          data={data} 
+      {/* makes a 16:9 box up to 800px wide, centered */}
+      <div className="w-full max-w-[800px] mx-auto aspect-video">
+        <Bar
+          data={data}
           options={options}
           aria-label={t('accessibility.chart-description')}
         />

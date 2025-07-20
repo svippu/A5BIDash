@@ -85,7 +85,7 @@ function App() {
               </span>
             </p>
             <p className="mt-2 text-white/60">
-              * Synthetic data for demonstration purposes
+              * All data presented on this website is synthetic for demonstration purposes - Toutes les données présentées sur ce site sont synthétiques à des fins de démonstration
             </p>
           </div>
         </footer>

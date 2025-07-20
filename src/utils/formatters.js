@@ -7,10 +7,10 @@ export const formatPrice = (price, currency, locale) => {
   };
 
   if (locale === 'fr') {
-    // French Canadian format: "12,99 $"
+    // da french format: "12,99 $"
     return new Intl.NumberFormat('fr-CA', formatOptions).format(price);
   } else {
-    // English format: "$12.99"
+    // da englis format: "$12.99"
     return new Intl.NumberFormat('en-CA', formatOptions).format(price);
   }
 };
